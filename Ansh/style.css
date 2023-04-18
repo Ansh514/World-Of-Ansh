@@ -1,0 +1,69 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	margin: 0px;
+	background: lightgrey;
+}
+.Main{
+	margin-top: 50px;
+}
+.LeftColumn{
+	background: white;
+  width: 69%;
+  float: left;
+}
+
+.ImgView{
+	padding: 5px;
+}
+
+.ImgView img{
+	height: 80px;
+	width: 150px;
+	margin: 3px;
+	float: left;
+	border-radius: 5px;
+	background: lightgrey;
+}
+
+.RightColumn{
+	margin-left: 1%;
+	background: white;
+	float: left;
+	width: 30%;
+}
+
+.RightColumn .ImgView img{
+	height: 80px;
+	width: 150px;
+	border-radius: 5px;
+	background: lightgrey;
+}
+.navbar {
+	overflow: hidden;
+	background-color: #344;
+	position: fixed;
+	top: 0;
+	color: white;
+	width: 100%;
+}
+.navbar h1{
+	padding: 14px 16px;
+	float: left;
+	font-size: 17px;
+}
+.navbar a {
+	float: right;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+.navbar a:hover {
+	background: #ddd;
+	color: black;
+}
