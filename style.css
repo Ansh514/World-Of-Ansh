@@ -13,7 +13,7 @@ body {
 /* Left column */
 .leftcolumn {
   width: 100%;
-  padding-top: 30px;
+  padding-top: 80px;
 }
 
 /* Right column */
@@ -120,5 +120,27 @@ ion-icons:hover{
   .leftcolumn , .rightcolumn{
     width:100%;
   }
-
+  .navbar{
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    color: white;
+    width: 100%;
+    z-index: 1;
+  }
+  .navbar h1{
+    padding: 16px 18px;
+    float: left;
+    font-size: 64px;
+  }
+  .navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-size: 64px;
+  }
 }
