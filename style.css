@@ -1,0 +1,195 @@
+
+/* Removing all the pading and margin from the page.*/ 
+ *{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    background-color: blueviolet;
+}
+
+/* Desigining the top navbar*/ 
+header{
+    float: left;
+    padding-left: 10px;
+    color: black;
+    padding-left: 8px;
+}
+.navbar{
+    z-index: 1;
+    box-shadow: 7px 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    font-size: 30px;
+    padding: 5px 4px;
+    -webkit-user-select: none;
+}
+
+.navbar a{
+    font-size: 20px;
+    float: right;
+    padding: 8px 8px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.navbar a:hover{
+    background-color: blueviolet;
+    color: white;
+}
+/*Here we are designing the main body contents.*/
+.main{
+    margin-top: 70px;
+}
+.coming-soon{
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 7px 6px 12px 7px rgba(0, 0, 0, 0.2);
+    width: 86%;
+    height: 200px;
+    margin: 7%;
+    -webkit-user-select: none;
+}
+.coming-soon img{
+  width: 90%;
+  height: 200px;
+  border-radius: 10px;
+}
+.coming-soon p{
+    color: lightgray;
+    padding: 90px;
+    font-size: xx-large;
+    text-align: center;
+    transform: rotate(-25deg);
+    z-index: 1;
+}
+.search-card{
+    background-color: blueviolet;
+    margin-top: 100px;
+}
+.search-card h2{
+    color: white;
+    text-align: center;
+    font-family: cursive;
+    font-size: large;
+    margin: 8px;
+}
+
+.subjects{
+    padding: 15%;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.subjects img{
+    background-color: white;
+    height: 80px;
+    width: 75px;
+    margin: 20px;
+    border-radius: 12px;
+
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+.subjects img:hover{
+  transform: scale(1.15);
+    transition: transform .1s;
+}
+.subjects a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.progress-container {
+    margin-left: -4px;
+    z-index: 1;
+    position: fixed;
+    top:48px;
+    width: 101%;
+    height: 6px;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 6px;
+    background: #be53fc;
+    width: 0%;
+  }
+  
+
+  ::selection{
+    color: #fff;
+    background: #664AFF;
+  }
+  
+.search-input{
+    margin-top: 20px;
+    background: white;
+    width: 60%;
+    margin-left: 23%;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+  }
+  
+  .search-input input{
+    height: 40px;
+    width: 80%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 8px;
+    padding-left: 18px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  }
+  
+  .search-input.active input{
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .search-input .autocom-box{
+    pointer-events: none;
+    max-height: 200px;
+    width: 100;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .search-input.active .autocom-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .autocom-box li{
+    background-color: #fff;
+    list-style: none;
+    padding: 10px 18px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+  
+  .search-input.active .autocom-box li{
+    display: block;
+  }
+  .autocom-box li:hover{
+    background: #efefef;
+  }
+  
+  .search-input .icon{
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    text-align: right;
+    padding-right: 6px;
+    font-size: 25px;
+    color: blueviolet;
+    cursor: pointer;
+  }
