@@ -9,9 +9,14 @@
   <title>World Of Ansh</title>
 </head>
 <body>
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="./index.html">Home</a>
+    <a href="about.html./">About</a>
+  </div>
   <div class="navbar">
-    <header>World Of Ansh</header>
- <a href="./index.html"><img src="images/home.svg"></a>
+<img src="images/menu.svg" onclick="openNav()">
+<header>World Of Ansh</header>
   </div>
   <div class="progress-container">
     <div class="progress-bar" id="myBar"></div>
@@ -42,6 +47,7 @@
  
     <script src="javascript/scroll.js"></script>
     <script src="Javascript/script.js"></script>
+    <script src="Javascript/Menu.js"></script>
     <script src="Javascript/suggestions.js"></script>
 </body>
 </html>
