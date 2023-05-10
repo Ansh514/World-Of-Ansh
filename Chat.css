@@ -1,0 +1,97 @@
+/* Removing all the pading and margin from the page.*/ 
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: blueviolet;
+}
+.navbar{
+    z-index: 2;
+    box-shadow: 7px 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.925);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+.back-button{
+    float: left;
+    height: 40px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.search-input{
+    margin: 8px;
+    margin-left: 70px;
+    background: white;
+    width: 80%;
+    margin-left: 50px;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+  }
+  
+  .search-input input{
+    height: 35px;
+    width: 80%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    padding-left: 18px;
+    font-size: 18px;
+   
+  }
+  
+  .search-input.active input{
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .search-input .autocom-box{
+    pointer-events: none;
+    max-height: 220px;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .search-input.active .autocom-box{
+    opacity: 1;
+    pointer-events: auto;
+    border-radius: 6px;
+  }
+  
+  .autocom-box li{
+    background-color: #fff;
+    list-style: none;
+    padding: 10px 18px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+  
+  .search-input.active .autocom-box li{
+    display: block;
+  }
+  .autocom-box li:hover{
+    background: #efefef;
+  }
+  
+.search-input .icon{
+    position: absolute;
+    right: 2px;
+    top: 15px;
+    text-align: right;
+    padding-right: 8px;
+    font-size: 25px;
+    color: blueviolet;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .search-input .icon:hover{
+    transform: scale(1.15);
+    transition: transform .1s;
+  }
