@@ -26,4 +26,5 @@ let suggestions = [
     "What does HTML stands for?",
     "What does CSS stands for?",
     "Maths Solution for Class 11",
+    "Device",
 ];
