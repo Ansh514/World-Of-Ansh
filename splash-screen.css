@@ -1,0 +1,23 @@
+/* Desigening the splash screen */
+.splash-screen{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background-color: white;
+  text-align: center;
+}
+.splash-screen p{
+  font-size: 35px;
+  text-align: center;
+  font-family: cursive;
+  font-weight: bolder;
+  color: white;
+  padding-top: 250px;
+  animation: fadeBackground 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeBackground{
+  from { color: white; }
+  to { color: blueviolet;}
+}

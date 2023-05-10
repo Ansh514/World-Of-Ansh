@@ -7,47 +7,63 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="https://lh3.googleusercontent.com/a/AGNmyxbDFJdDDx-8RrAg8Lq_G3TkHY_CFXHMowfZlwNY=s96-c-rg-br100" type="image/x-icon">
   <title>World Of Ansh</title>
+  <link rel="stylesheet" href="splash-screen.css">
 </head>
-<body>
+<style>
+  #myDiv {
+  display: none;
+}
+</style>
+<body onload="splashScreen()" style="margin:0;">
+
+<div id="splash-screen" class="splash-screen">
+  <center><p>World Of Ansh</p></center>
+</div>
+
+  <div id="myDiv">
   <div id="mySidepanel" class="sidepanel">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <a href="./index.html">Home</a>
-    <a href="about.html./">About</a>
+    <a href="./about.html">About</a>
   </div>
+
   <div class="navbar">
 <img src="images/menu.svg" onclick="openNav()">
 <header>World Of Ansh</header>
+<div class="progress-container">
+  <div class="progress-bar" id="myBar"></div>
+</div> 
   </div>
-  <div class="progress-container">
-    <div class="progress-bar" id="myBar"></div>
-  </div> 
+
+  <a href="./Chat.html"><img src="./images/chatbubble-ellipses-outline.svg" class="Chat"></a>
+
   <div class="main">
     <div class="search-card">
-      <h2>Get verified solutions to all your doubts</h2>
+      <h2>Get verified solutions of all your doubts</h2>
         <div class="search-input">
-          <div class="icon"><b>→</b></div>
+          <div class="icon"><img src="./images/search.svg" alt="" width="25px"></div>
           <a href="" target="_blank" hidden></a>
           <input type="text" placeholder="Type to search..">
           <div class="autocom-box">
             <!-- here list are inserted from javascript -->
           </div> 
-    </div>
-    
+        </div>    
     </div>
     <div class="subjects">
       <center>
-      <a href=""><img src="./images/Physic.png" alt=""></a>
-      <a href=""><img src="./images/Chemist.png" alt=""></a>
-      <a href=""><img src="./images/Maths.png" alt=""></a>
+      <a href="Physics.html"><img src="./images/Physic.png" alt=""></a>
+      <a href="Chemistry.html"><img src="./images/Chemist.png" alt=""></a>
+      <a href="Maths.html"><img src="./images/Maths.png" alt=""></a>
       </center>
     </div>
-     <!-- <div class="coming-soon"> -->
-      <!-- <p style="z-index: 2;">Coming Soon</p></div> -->
+     
   </div>
- 
+</div>
+ <!-- Hrere , I am linking the javascript files. -->
     <script src="javascript/scroll.js"></script>
-    <script src="Javascript/script.js"></script>
+    <script src="Javascript/search.js"></script>
     <script src="Javascript/Menu.js"></script>
     <script src="Javascript/suggestions.js"></script>
+    <script src="./Javascript/splash-screen.js"></script>
 </body>
 </html>
